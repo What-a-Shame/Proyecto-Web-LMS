@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+header{
+    padding: 20px;
+    background-color: #181818;
+}
+
+header .flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.flex-container .home{
+    margin-right: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+header nav{
+    margin-right: auto;
+}
+
+header nav a{
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 35px;
+    color: white;
+}
+
+header nav a:hover{
+    border-bottom: 2px solid white;
+}
