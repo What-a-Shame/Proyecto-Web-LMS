@@ -1,28 +1,21 @@
+/* RESETEO */
 *{
     margin: 0;
     padding: 0;
-    font-family: Helvetica;
+    box-sizing: border-box;
+    font-family: 'Arvo';
 }
 
+/* HEADER */
 header{
-    padding: 20px;
+    text-align: center;
+    padding: 25px;
     background-color: #181818;
 }
 
-header .flex-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-}
-
-.flex-container .home{
-    margin-right: 50%;
-    width: 90px;
-    height: 90px;
-}
-
-header nav{
-    margin-right: auto;
+#hcontainer #home{
+    width: 100px;
+    height: 100px;
 }
 
 header nav a{
@@ -30,9 +23,43 @@ header nav a{
     text-decoration: none;
     text-transform: uppercase;
     margin-right: 35px;
-    color: white;
+    color: #ffffffff;
 }
 
 header nav a:hover{
-    border-bottom: 2px solid white;
+    color: #046df5;
+    border-bottom: 2px solid #046df5;
+    border-radius: 5px;
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 800px;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(2, 49, 150, 0.6)), url(assets/coches.jpg) no-repeat center center/cover;
+    padding-bottom: 200px;
+}
+
+main a {
+    padding: 25px;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffffff;
+}
+
+main a:hover {
+    background-color: rgba(255, 255, 255, 0.295);
+    border-radius: 50px;
+}
+
+/* FOOTER */
+footer {
+    padding: 70px;
+    background-color: #181818;
+    color: #ffffffff;
+    text-align:center
 }
