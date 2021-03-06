@@ -16,6 +16,7 @@ header{
 #hcontainer #home{
     width: 100px;
     height: 100px;
+    margin-bottom: 10px;
 }
 
 header nav a{
@@ -34,7 +35,8 @@ header nav a:hover{
 
 /* MAIN */
 
-main {
+/* MAIN INDEX.HTML */
+main #seccion1{
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -43,7 +45,7 @@ main {
     padding-bottom: 200px;
 }
 
-main a {
+main #seccion1 a{
     padding: 25px;
     font-size: 1.2em;
     text-decoration: none;
@@ -51,9 +53,50 @@ main a {
     color: #ffffffff;
 }
 
-main a:hover {
+main #seccion1 a:hover {
     background-color: rgba(255, 255, 255, 0.295);
     border-radius: 50px;
+}
+
+/* MAIN P1.HTML */
+
+.vehiculos {
+    display: inline-block;
+    margin: 30px 0;
+    padding: 0 0 0 30px;
+}
+
+.vehiculos h2{
+    max-width: max-content;
+    border-bottom: 2px solid #181818;
+}
+
+.vimage {
+    height: 200px;
+    width: 350px;  
+    vertical-align: middle;
+}
+
+.vdesc {
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 30px;
+}
+
+.config{
+    max-width: fit-content;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 2px solid #181818;
+    color: #181818;
+    border-radius: 50px;
+}
+
+.config:hover {
+    background-color: #046df5;
 }
 
 /* FOOTER */
