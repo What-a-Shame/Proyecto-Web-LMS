@@ -1,17 +1,17 @@
-/* RESETEO */
+/* RESETEO -------------------------------------------------------------------------------- */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY */
+/* BODY -------------------------------------------------------------------------------- */
 
 body{
     font-family: 'Arvo';
 }
 
-/* HEADER */
+/* HEADER -------------------------------------------------------------------------------- */ 
 header{
     text-align: center;
     padding: 25px;
@@ -38,7 +38,7 @@ header nav a:hover{
     border-radius: 5px;
 }
 
-/* MAIN */
+/* MAIN -------------------------------------------------------------------------------- */
 
 /* ANCHO DEL MAIN */
 main{
@@ -69,7 +69,7 @@ main #seccion1 a:hover {
     border-radius: 50px;
 }
 
-/* MAIN P1.HTML */
+/* MAIN P1.HTML -------------------------------------------------------------------------------- */
 
 .vehiculos {
     display: flex;
@@ -112,33 +112,41 @@ main #seccion1 a:hover {
     background-color: #046cf598;
 }
 
-/* MAIN CONFIGURADOR.HTML */
+/* MAIN CONFIGURADOR.HTML -------------------------------------------------------------------------------- */
 
 main #config{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 200px;
+    align-items: center;
 }
+
+/* FORMULARIO DE CONFIGURACION -------------------------------------------------------------------------------- */
 
 form .cajones {
     padding: 20px;
-    margin: 0 50px;
+    margin: 0 175px;
 }
 
-input[type=button], select{
+section#config article #configurador a, select{
     border:2px solid #181818 ;
     background-color: #ffffffff;
     padding: 10px;
     border-radius: 50px;
 }
 
-input[type=button] {
+select:focus{
+    outline: none;
+}
+
+section#config article #configurador a {
+    text-decoration: none;
     font-weight: bold;
+    color: #000000;
     box-shadow: 1px 1px 5px #046df5;
 }
 
-input[type=button]:hover{
+section#config article #configurador a:hover {
     background-color: #046cf598;
     cursor: pointer;
 }
@@ -151,31 +159,39 @@ form#configurador label{
     margin-bottom: 20px;
 }
 
+/* IMAGENES DEL CONFIGURADOR -------------------------------------------------------------------------------- */
+
+main section#config article#imgconfig {
+    width: 50%;
+}
+
 main #config img{
     width: 350px;
     height: 200px;
-    margin: 0 50px;
+    margin: 25px 25px;
 }
 
-/* P2.HTML */
+main section#config article img:hover{
+    cursor: pointer;
+}
+
+/* P2.HTML -------------------------------------------------------------------------------- */
 
 main#main-flex {
     display:flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
 }
 
-/* CUERPO DEL MAIN */
+/* CUERPO DEL MAIN -------------------------------------------------------------------------------- */
 
 main#main-flex section{
     width: 100%;
     text-align: center;
 }
 
-/* ASIDE */
-
-aside {
-    background-color: #cc2366;
-}
+/* ASIDE -------------------------------------------------------------------------------- */
 
 .iconos {
     font-size: 50px;
@@ -183,12 +199,39 @@ aside {
 
 main#main-flex aside a{
     padding: 50px;
-    /* background-color: #ffffff; */
     display: flex;
 }
 
 main#main-flex aside a{
     text-decoration: none;
+}
+
+/* FORMULARIO DE COMPRA ( P2.HTML ) -------------------------------------------------------------------------------- */
+
+.cajapago {
+    display: block;
+    margin: 35px;
+}
+
+main#main-flex section#info-facturacion form#pago {
+    border: 2px solid black;
+    text-align: left;
+    max-width: fit-content;
+    margin: auto;
+}
+
+
+/* ESTILOS DE LOS ICONOS ( FONT AWESOME ) -------------------------------------------------------------------------------- */
+.fa-tiktok {
+    color: #141414;
+}
+
+.fa-twitch {
+    color: #6441a5;
+}
+
+.fa-snapchat-square {
+    color: #e4e135;
 }
 
 .fa-instagram {
@@ -206,7 +249,7 @@ main#main-flex aside a{
     color: #1c9cea;
 }
 
-/* FOOTER */
+/* FOOTER -------------------------------------------------------------------------------- */
 footer {
     padding: 70px;
     background-color: #181818;
