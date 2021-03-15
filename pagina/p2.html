@@ -38,12 +38,16 @@
                     <div class="cajapago">
                         <label for="nombre">Nombre</label>
                         <input type="text" name="nombre" id="nombre" size="20" required/>
+                    </div>
+                    <div class="cajapago">
                         <label for="apellido">Apellidos</label>
                         <input type="text" name="apellido" id="apellido" size="20" required/>
+                    </div>
+                    
+                    <div class="cajapago">
                         <label for="dni">DNI</label>
                         <input type="text" name="dni" id="dni" maxlength="9" minlength="9" size="6" required/>
                     </div>
-
                     <div class="cajapago">
                         <label for="email">e-mail</label>
                         <input type="email" name="email" id="email" size="30" required/>
@@ -63,7 +67,7 @@
                         </select>
                         <label for="dir">Dirección</label>
                         <input type="text" name="dir" id="dir" size="40" required/>
-                        <label for="numero">Numero</label>
+                        <label for="numero">nº</label>
                         <input type="number" name="numero" id="numero" min="1" max="999" required/>
                     </div>
 
@@ -71,16 +75,21 @@
 
                     <div class="cajapago">
                         <input type="radio" name="envio" id="estandar" checked="checked"/>
-                        <label for="estandar"> Estandar</label><br/>
-                        <input type="radio" name="envio" id="premium"/>
-                        <label for="premium"> Premium</label><br/>
-                        <input type="radio" name="envio" id="vip"/>
-                        <label for="vip"> VIP</label><br/>
+                        <label for="estandar"> Envio Estandar</label>
                     </div>
-
                     <div class="cajapago">
-                        <input type="submit" name="finalizar" id="finalizar" value="Finalizar"/>
-                        <input type="reset" name="reset" id="reset" value="Reiniciar"/>
+                        <input type="radio" name="envio" id="premium"/>
+                        <label for="premium"> Envio 72 h</label>
+                    </div>
+                    <div class="cajapago">
+                        <input type="radio" name="envio" id="vip"/>
+                        <label for="vip"> Envio Premium</label>
+                    </div>
+                    <div class="cajapago">
+                        <div class="finalbutt">
+                            <input type="submit" name="finalizar" id="finalizar" value="Finalizar"/>
+                            <input type="reset" name="reset" id="reset" value="Reiniciar"/>
+                        </div>
                     </div>
  
                 </form>

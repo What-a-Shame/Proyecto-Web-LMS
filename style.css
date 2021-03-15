@@ -40,13 +40,13 @@ header nav a:hover{
 
 /* MAIN -------------------------------------------------------------------------------- */
 
-/* ANCHO DEL MAIN */
+/* ANCHO DEL MAIN -------------------------------------------------------------------------------- */
 main{
     width: 90%;
     margin: auto;
 }
 
-/* MAIN INDEX.HTML */
+/* MAIN INDEX.HTML -------------------------------------------------------------------------------- */
 main #seccion1{
     display: flex;
     align-items: flex-end;
@@ -148,7 +148,6 @@ section#config article #configurador a {
 
 section#config article #configurador a:hover {
     background-color: #046cf598;
-    cursor: pointer;
 }
 
 form#configurador label{
@@ -173,6 +172,11 @@ main #config img{
 
 main section#config article img:hover{
     cursor: pointer;
+    box-shadow: 7px 7px 15px #000000;
+}
+
+main section#config article img:active{
+    border: 2px solid #046df5;
 }
 
 /* P2.HTML -------------------------------------------------------------------------------- */
@@ -181,7 +185,6 @@ main#main-flex {
     display:flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
 }
 
 /* CUERPO DEL MAIN -------------------------------------------------------------------------------- */
@@ -213,11 +216,45 @@ main#main-flex aside a{
     margin: 35px;
 }
 
+main#main-flex section#info-facturacion form#pago .finalbutt {
+    max-width: fit-content;
+    margin: auto;
+}
+
+input {
+    
+}
+
+main#main-flex section#info-facturacion form#pago .finalbutt input{
+    border-radius: 50px;
+    padding: 10px;
+    margin: 0px 35px;
+    border: 2px solid #181818;
+    background-color: #f1efef;
+    font-weight: bold;
+}
+
+main#main-flex section#info-facturacion form#pago .finalbutt input:hover{
+    cursor: pointer;
+    background-color: #046cf598;
+}
+
+main#main-flex section#info-facturacion form#pago .finalbutt input:focus{
+    outline: none;
+}
+
 main#main-flex section#info-facturacion form#pago {
     border: 2px solid black;
     text-align: left;
     max-width: fit-content;
-    margin: auto;
+    margin: 50px auto;
+}
+
+main#main-flex section#info-facturacion form#pago select{
+    border:2px solid #181818 ;
+    background-color: #ffffffff;
+    padding: 5px;
+    border-radius: 50px;
 }
 
 
