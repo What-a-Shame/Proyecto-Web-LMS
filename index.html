@@ -11,16 +11,23 @@
 
     <body>
 
-        <header>
+        <header id="cabecera">
             <div id="home">
                 <a href="#"><img src="assets/logo.png" id="home_logo" alt="Logo"></a>
             </div>
 
-            <nav>
-                <ul>
-                    <li class="navegador"><a href="#" target="_self">Home</a></li>
-                    <li class="navegador"><a href="pagina/p1.html" target="_self">Vehiculos</a></li>
-                    <li class="navegador"><a href="pagina/configurador.html" target="_self">Configurador</a></li>
+            <nav id="menu">
+                <ul class="menuprin">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="pagina/p1.html">Vehiculos</a>
+                        <ul class="submenu">
+                            <li><a href="pagina/p1.html">Porsche</a></li>
+                            <li><a href="#">Lamborghini</a></li>
+                            <li><a href="#">Ferrari</a></li>
+                            <li><a href="#">Tesla</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="pagina/configurador.html">Configurador</a></li>
                 </ul>
             </nav>
         </header>
