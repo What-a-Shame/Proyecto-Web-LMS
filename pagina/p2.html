@@ -13,13 +13,17 @@
     <body>
 
         <header>
-            <div id="hcontainer">
-                <a href="../index.html"><img src="../assets/logo.png" id="home" alt="Logo"></a>
-                <nav>
-                    <a href="../index.html" target="_self">Home</a>
-                    <a href="p1.html" target="_self" id="itemV">Vehiculos</a>
-                </nav>
+            <div id="home">
+                <a href="#"><img src="../assets/logo.png" id="home_logo" alt="Logo"></a>
             </div>
+
+            <nav>
+                <ul>
+                    <li class="navegador"><a href="../index.html" target="_self">Home</a></li>
+                    <li class="navegador"><a href="p1.html" target="_self">Vehiculos</a></li>
+                    <li class="navegador"><a href="configurador.html" target="_self">Configurador</a></li>
+                </ul>
+            </nav>
         </header>
 
         <main id="main-flex">
@@ -36,21 +40,21 @@
                     <!-- Datos Identificadores del comprador -->
 
                     <div class="cajapago">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" id="nombre" size="20" required/>
+                        <label for="nombre" class="bloque">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" class="fpp" size="20" required/>
                     </div>
                     <div class="cajapago">
-                        <label for="apellido">Apellidos</label>
-                        <input type="text" name="apellido" id="apellido" size="20" required/>
+                        <label for="apellido" class="bloque">Apellidos</label>
+                        <input type="text" name="apellido" id="apellido" class="fpp" size="20" required/>
                     </div>
                     
                     <div class="cajapago">
-                        <label for="dni">DNI</label>
-                        <input type="text" name="dni" id="dni" maxlength="9" minlength="9" size="6" required/>
+                        <label for="dni" class="bloque">DNI</label>
+                        <input type="text" name="dni" id="dni" class="fpp" maxlength="9" minlength="9" size="6" required/>
                     </div>
                     <div class="cajapago">
-                        <label for="email">e-mail</label>
-                        <input type="email" name="email" id="email" size="30" required/>
+                        <label for="email" class="bloque">e-mail</label>
+                        <input type="email" name="email" id="email" class="fpp" size="30" required/>
                     </div>
 
 
@@ -87,7 +91,7 @@
                     </div>
                     <div class="cajapago">
                         <div class="finalbutt">
-                            <input type="submit" name="finalizar" id="finalizar" value="Finalizar"/>
+                            <input type="submit" name="finalizar" id="finalizar" value="Pagar"/>
                             <input type="reset" name="reset" id="reset" value="Reiniciar"/>
                         </div>
                     </div>

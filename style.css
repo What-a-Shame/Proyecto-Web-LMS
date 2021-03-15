@@ -18,13 +18,17 @@ header{
     background-color: #181818;
 }
 
-#hcontainer #home{
+header div#home img#home_logo{
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
 }
 
-header nav a{
+header nav ul li.navegador {
+    display: inline;
+}
+
+header nav ul li.navegador a{
     padding: 10px;
     text-decoration: none;
     text-transform: uppercase;
@@ -32,7 +36,7 @@ header nav a{
     color: #ffffffff;
 }
 
-header nav a:hover{
+header nav ul li.navegador a:hover{
     color: #046df5;
     border-bottom: 2px solid #046df5;
     border-radius: 5px;
@@ -47,7 +51,7 @@ main{
 }
 
 /* MAIN INDEX.HTML -------------------------------------------------------------------------------- */
-main #seccion1{
+main section#seccion1{
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -56,7 +60,7 @@ main #seccion1{
     padding-bottom: 200px;
 }
 
-main #seccion1 a{
+main section#seccion1 a{
     padding: 25px;
     font-size: 1.2em;
     text-decoration: none;
@@ -64,41 +68,41 @@ main #seccion1 a{
     color: #ffffffff;
 }
 
-main #seccion1 a:hover {
+main section#seccion1 a:hover {
     background-color: 	#ffffff65;
     border-radius: 50px;
 }
 
 /* MAIN P1.HTML -------------------------------------------------------------------------------- */
 
-.vehiculos {
+main section.vehiculos {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
 }
 
-.caja-vehiculos {
+main section.vehiculos article.caja-vehiculos {
     margin: 20px;
 }
 
-.infoV p {
+main section.vehiculos article.caja-vehiculos div.infoV p {
     width: 350px;
     text-align: justify;
 }
 
-.vimage {
+main section.vehiculos article.caja-vehiculos div.infoV img.vimage {
     height: 200px;
     width: 350px;  
     vertical-align: middle;
 }
 
-.vdesc {
+main section.vehiculos article.caja-vehiculos div.infoV span.vdesc {
     font-weight: bold;
     display: inline-block;
     vertical-align: middle;
 }
 
-.config{
+main section.vehiculos article.caja-vehiculos div.infoV a.conf{
     text-decoration: none;
     display: inline-block;
     padding: 10px;
@@ -108,13 +112,13 @@ main #seccion1 a:hover {
     border-radius: 50px;
 }
 
-.config:hover {
+main section.vehiculos article.caja-vehiculos div.infoV a.conf:hover {
     background-color: #046cf598;
 }
 
 /* MAIN CONFIGURADOR.HTML -------------------------------------------------------------------------------- */
 
-main #config{
+main section#config{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -123,34 +127,34 @@ main #config{
 
 /* FORMULARIO DE CONFIGURACION -------------------------------------------------------------------------------- */
 
-form .cajones {
+main section#config article form#configurador div.cajones {
     padding: 20px;
     margin: 0 175px;
 }
 
-section#config article #configurador a, select{
+main section#config article form#configurador a, main section#config article form#configurador select{
     border:2px solid #181818 ;
     background-color: #ffffffff;
     padding: 10px;
     border-radius: 50px;
 }
 
-select:focus{
+main section#config article form#configurador select:focus{
     outline: none;
 }
 
-section#config article #configurador a {
+main section#config article form#configurador a {
     text-decoration: none;
     font-weight: bold;
     color: #000000;
     box-shadow: 1px 1px 5px #046df5;
 }
 
-section#config article #configurador a:hover {
+main section#config article form#configurador a:hover {
     background-color: #046cf598;
 }
 
-form#configurador label{
+main section#config article form#configurador label{
     display: block;
     text-transform: uppercase;
     font-weight: bold;
@@ -164,18 +168,18 @@ main section#config article#imgconfig {
     width: 50%;
 }
 
-main #config img{
+main section#config article#imgconfig img{
     width: 350px;
     height: 200px;
     margin: 25px 25px;
 }
 
-main section#config article img:hover{
+main section#config article#imgconfig img:hover{
     cursor: pointer;
     box-shadow: 7px 7px 15px #000000;
 }
 
-main section#config article img:active{
+main section#config article#imgconfig img:active{
     border: 2px solid #046df5;
 }
 
@@ -196,36 +200,35 @@ main#main-flex section{
 
 /* ASIDE -------------------------------------------------------------------------------- */
 
-.iconos {
+main#main-flex aside div.iconos {
     font-size: 50px;
 }
 
-main#main-flex aside a{
+main#main-flex aside div.iconos a{
     padding: 50px;
     display: flex;
 }
 
-main#main-flex aside a{
+main#main-flex aside div.iconos a{
     text-decoration: none;
 }
 
 /* FORMULARIO DE COMPRA ( P2.HTML ) -------------------------------------------------------------------------------- */
 
-.cajapago {
-    display: block;
+main#main-flex section#info-facturacion form#pago div.cajapago {
     margin: 35px;
 }
 
-main#main-flex section#info-facturacion form#pago .finalbutt {
+main#main-flex section#info-facturacion form#pago label.bloque {
+    display: block;
+}
+
+main#main-flex section#info-facturacion form#pago div.finalbutt {
     max-width: fit-content;
     margin: auto;
 }
 
-input {
-    
-}
-
-main#main-flex section#info-facturacion form#pago .finalbutt input{
+main#main-flex section#info-facturacion form#pago div.finalbutt input{
     border-radius: 50px;
     padding: 10px;
     margin: 0px 35px;
@@ -257,32 +260,36 @@ main#main-flex section#info-facturacion form#pago select{
     border-radius: 50px;
 }
 
+main#main-flex section#info-facturacion form#pago select:focus {
+    outline: none;
+}
+
 
 /* ESTILOS DE LOS ICONOS ( FONT AWESOME ) -------------------------------------------------------------------------------- */
-.fa-tiktok {
+main#main-flex aside .iconos .fa-tiktok {
     color: #141414;
 }
 
-.fa-twitch {
+main#main-flex aside .iconos .fa-twitch {
     color: #6441a5;
 }
 
-.fa-snapchat-square {
+main#main-flex aside .iconos .fa-snapchat-square {
     color: #e4e135;
 }
 
-.fa-instagram {
+main#main-flex aside .iconos .fa-instagram {
     padding: 1px 3px;
     color: #ffffff;
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
     border-radius: 15px;
 }
 
-.fa-facebook-square {
+main#main-flex aside .iconos .fa-facebook-square {
     color: #0f8ff2;
 }
 
-.fa-twitter {
+main#main-flex aside .iconos .fa-twitter {
     color: #1c9cea;
 }
 
