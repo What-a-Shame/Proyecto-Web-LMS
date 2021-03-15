@@ -34,31 +34,41 @@
         </header>
 
         <main id="main-flex">
+            <!-- Aside de la izquierda -->
             <aside>
+                <!-- Iconos de font-awesome, importados en el header -->
                 <div class="iconos">
                     <a href="#"><i class="fab fa-tiktok"></i></a>
                     <a href="#"><i class="fab fa-twitch"></i></a>
                     <a href="#"><i class="fab fa-snapchat-square"></i></a>
                 </div>
             </aside>
+
             <section id="info-facturacion">
+                <!-- Formulario para recoger los datos de el comprador para envio -->
                 <form name="pago" id="pago" method="POST">
 
                     <!-- Datos Identificadores del comprador -->
 
+                    <!-- Nombre de el comprador -->
                     <div class="cajapago">
                         <label for="nombre" class="bloque">Nombre</label>
                         <input type="text" name="nombre" id="nombre" class="fpp" size="20" required/>
                     </div>
+
+                    <!-- Apellidos de el comprador -->
                     <div class="cajapago">
                         <label for="apellido" class="bloque">Apellidos</label>
                         <input type="text" name="apellido" id="apellido" class="fpp" size="20" required/>
                     </div>
                     
+                    <!-- DNI de el comprador -->
                     <div class="cajapago">
                         <label for="dni" class="bloque">DNI</label>
                         <input type="text" name="dni" id="dni" class="fpp" maxlength="9" minlength="9" size="6" required/>
                     </div>
+
+                    <!-- Correo electronico de el comprador -->
                     <div class="cajapago">
                         <label for="email" class="bloque">e-mail</label>
                         <input type="email" name="email" id="email" class="fpp" size="30" required/>
@@ -84,18 +94,25 @@
 
                     <!-- Tipo de envio que quiere el comprador -->
 
+                    <!-- Opcion para el tipo de envio -->
                     <div class="cajapago">
                         <input type="radio" name="envio" id="estandar" checked="checked"/>
                         <label for="estandar"> Envio Estandar</label>
                     </div>
+
+                    <!-- Opcion para el tipo de envio -->
                     <div class="cajapago">
                         <input type="radio" name="envio" id="premium"/>
                         <label for="premium"> Envio 72 h</label>
                     </div>
+
+                    <!-- Opcion para el tipo de envio -->
                     <div class="cajapago">
                         <input type="radio" name="envio" id="vip"/>
                         <label for="vip"> Envio Premium</label>
                     </div>
+
+                    <!-- Botones para enviar la informacion / resetear el formulario -->
                     <div class="cajapago">
                         <div class="finalbutt">
                             <input type="submit" name="finalizar" id="finalizar" value="Pagar"/>
@@ -105,7 +122,9 @@
  
                 </form>
             </section>
+            <!-- Aside de la derecha -->
             <aside>
+                <!-- Iconos de font-awesome, importados en el header -->
                 <div class="iconos">
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-facebook-square"></i></a>

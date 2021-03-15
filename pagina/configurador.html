@@ -34,7 +34,8 @@
 
         <main>
             <section id="config">
-                <article id="imgconfig">
+                <article id="imgconfig"> 
+                    <!-- Imagenes de todos los vehiculos disponibles para configurar -->
                     <img src="../assets/vehiculos/porsche911gt3.jpg" alt="porsche911 Gt3"/>
                     <img src="../assets/vehiculos/porschecaymangt4.png" alt="porsche911 Gt3"/>
                     <img src="../assets/vehiculos/porschetaycanturbos.png" alt="porsche911 Gt3"/>
@@ -43,11 +44,14 @@
                     <img src="../assets/vehiculos/porschecayennecoupe.jpg" alt="porsche911 Gt3"/>
                 </article>
                 <article>
+                    <!-- Formulario que recoge la configuracion para los vehiculos -->
                     <form name="configurador" id="configurador" accept-charset="UTF-8">
+                        <!-- Color para el coche -->
                         <div class="cajones">
                             <label>Color</label>
                             <input type="color" name="color" id="color"/>
                         </div>
+                        <!-- Acabado para la pintura del coche -->
                         <div class="cajones">
                             <label>Acabado</label>
                             <select name="acabado" id="acabado">
@@ -56,6 +60,7 @@
                                 <option value="mate">Mate</option>
                             </select>
                         </div>
+                        <!-- Extras para el vehiculo -->
                         <div class="cajones">
                             <label>Extras</label>
                             <input type="checkbox" name="extras" id="extras1"><span> Asientos Calefactables</span><br/>
@@ -63,6 +68,7 @@
                             <input type="checkbox" name="extras" id="extras3"><span> Asientos Deportivos</span><br/>
                             <input type="checkbox" name="extras" id="extras4"><span> Conexion a Internet</span>
                         </div>
+                        <!-- Enlace que simula la opcion de comprar -->
                         <div class="cajones">
                             <a href="p2.html">Comprar</a>
                         </div>
